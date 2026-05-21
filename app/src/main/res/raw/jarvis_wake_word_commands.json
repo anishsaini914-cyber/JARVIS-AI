@@ -1,0 +1,53 @@
+{
+  "wake_words": [
+    "hey jarvis",
+    "hello jarvis",
+    "jarvis"
+  ],
+  "commands": {
+    "open": {
+      "patterns": ["open *", "launch *", "start *"],
+      "description": "Open an app or setting"
+    },
+    "call": {
+      "patterns": ["call *", "dial *", "phone *", "call uthao", "call cut karo", "speaker pe uthao"],
+      "description": "Handle phone calls"
+    },
+    "flashlight": {
+      "patterns": ["flashlight on", "flashlight off", "torch on", "torch off", "light on", "light off"],
+      "description": "Control flashlight"
+    },
+    "weather": {
+      "patterns": ["weather *", "temperature *", "what's the weather"],
+      "description": "Get weather information"
+    },
+    "alarm": {
+      "patterns": ["set alarm *", "alarm *", "wake me up *"],
+      "description": "Set or manage alarms"
+    },
+    "music": {
+      "patterns": ["play music", "play song *", "music *"],
+      "description": "Play music"
+    },
+    "search": {
+      "patterns": ["search *", "google *", "look up *"],
+      "description": "Search the web"
+    },
+    "battery": {
+      "patterns": ["battery *", "battery status", "charge *"],
+      "description": "Get battery information"
+    },
+    "notification": {
+      "patterns": ["read notifications", "notifications *", "what's new"],
+      "description": "Read notifications"
+    },
+    "settings": {
+      "patterns": ["open settings", "settings", "wifi", "bluetooth"],
+      "description": "Open device settings"
+    },
+    "who_is_calling": {
+      "patterns": ["who is calling", "who called", "caller"],
+      "description": "Identify caller"
+    }
+  }
+}

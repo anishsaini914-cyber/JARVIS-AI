@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JARVIS</string>
+    <string name="app_tagline">Your Personal AI Assistant</string>
+
+    <!-- Permissions -->
+    <string name="permission_microphone_title">Microphone Access</string>
+    <string name="permission_microphone_desc">JARVIS needs microphone access to hear your voice commands</string>
+    <string name="permission_overlay_title">Display Overlay</string>
+    <string name="permission_overlay_desc">JARVIS needs overlay permission to show floating assistant</string>
+    <string name="permission_notification_title">Notifications</string>
+    <string name="permission_notification_desc">JARVIS needs notification access to read and respond to notifications</string>
+    <string name="permission_phone_title">Phone Permissions</string>
+    <string name="permission_phone_desc">JARVIS needs phone permissions to handle calls</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welcome to JARVIS</string>
+    <string name="onboarding_welcome_desc">Your intelligent AI assistant that responds to your voice and helps you get things done</string>
+    <string name="onboarding_voice_title">Voice Control</string>
+    <string name="onboarding_voice_desc">Control your device hands-free with natural voice commands</string>
+    <string name="onboarding_ai_title">AI Powered</string>
+    <string name="onboarding_ai_desc">Powered by cutting-edge AI with support for OpenAI, Gemini, and local models</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_skip">Skip</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_voice">Voice</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+
+    <!-- Home -->
+    <string name="greeting_morning">Good Morning</string>
+    <string name="greeting_afternoon">Good Afternoon</string>
+    <string name="greeting_evening">Good Evening</string>
+    <string name="greeting_night">Good Night</string>
+    <string name="tap_to_speak">Tap to speak</string>
+    <string name="listening">Listening…</string>
+    <string name="processing">Processing…</string>
+    <string name="say_jarvis">Say \"Hey JARVIS\" to activate</string>
+
+    <!-- Chat -->
+    <string name="chat_hint">Type a message…</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_voice_input">Voice Input</string>
+    <string name="chat_clear">Clear chat</string>
+
+    <!-- Voice -->
+    <string name="voice_ready">I\'m listening</string>
+    <string name="voice_processing">Processing your request…</string>
+    <string name="voice_error">Sorry, I didn\'t catch that</string>
+    <string name="voice_not_recognized">Voice not recognized</string>
+
+    <!-- Settings -->
+    <string name="settings_general">General</string>
+    <string name="settings_ai_providers">AI Providers</string>
+    <string name="settings_voice">Voice Settings</string>
+    <string name="settings_wake_word">Wake Word</string>
+    <string name="settings_overlay">Overlay Settings</string>
+    <string name="settings_weather">Weather Settings</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_permissions">Permissions</string>
+    <string name="settings_about">About</string>
+    <string name="settings_privacy">Privacy &amp; Security</string>
+
+    <!-- AI Provider Settings -->
+    <string name="provider_openai">OpenAI</string>
+    <string name="provider_gemini">Gemini</string>
+    <string name="provider_agentrouter">AgentRouter</string>
+    <string name="provider_local">Local Model</string>
+    <string name="api_key_hint">Enter API Key</string>
+    <string name="api_key_saved">API Key saved securely</string>
+    <string name="model_hint">Model (e.g. gpt-4)</string>
+    <string name="endpoint_hint">Custom Endpoint URL</string>
+
+    <!-- Local Model -->
+    <string name="local_model_title">Local Models</string>
+    <string name="local_model_import">Import GGUF/GGML Model</string>
+    <string name="local_model_select">Select Model</string>
+    <string name="local_model_manage">Manage Models</string>
+    <string name="no_models_found">No local models found</string>
+
+    <!-- Wake Word -->
+    <string name="wake_word_hey_jarvis">Hey JARVIS</string>
+    <string name="wake_word_hello_jarvis">Hello JARVIS</string>
+    <string name="wake_word_custom">Custom wake word</string>
+    <string name="wake_word_sensitivity">Sensitivity</string>
+    <string name="wake_word_enable">Enable wake word</string>
+
+    <!-- Weather -->
+    <string name="weather_title">Weather</string>
+    <string name="weather_enable">Enable weather updates</string>
+    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_celsius">Celsius</string>
+    <string name="weather_fahrenheit">Fahrenheit</string>
+    <string name="weather_location">Location</string>
+
+    <!-- Overlay -->
+    <string name="overlay_enable">Show floating bubble</string>
+    <string name="overlay_opacity">Opacity</string>
+    <string name="overlay_size">Bubble size</string>
+    <string name="overlay_position">Drag to reposition</string>
+
+    <!-- Commands -->
+    <string name="cmd_open_app">Open app</string>
+    <string name="cmd_open_settings">Open settings</string>
+    <string name="cmd_flashlight">Flashlight</string>
+    <string name="cmd_alarm">Set alarm</string>
+    <string name="cmd_call">Call handling</string>
+    <string name="cmd_weather">Weather</string>
+    <string name="cmd_music">Play music</string>
+    <string name="cmd_search">Search browser</string>
+    <string name="cmd_battery">Battery status</string>
+
+    <!-- About -->
+    <string name="about_developer">Developer</string>
+    <string name="about_developer_name">ANISH SAINI</string>
+    <string name="about_email">anishsaini939@gmail.com</string>
+    <string name="about_version">Version</string>
+    <string name="about_license">License</string>
+    <string name="about_license_type">MIT License</string>
+
+    <!-- General -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="retry">Retry</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="grant_permission">Grant Permission</string>
+
+    <!-- Overlay Activity -->
+    <string name="activate_voice">Activate Voice</string>
+    <string name="open_chat">Open Chat</string>
+    <string name="close">Close</string>
+
+    <!-- Notification -->
+    <string name="overlay_service_running">JARVIS is running</string>
+    <string name="voice_listening">Listening for commands</string>
+    <string name="wake_word_active">Wake word active</string>
+    <string name="call_handling_active">Call handling active</string>
+    <string name="notification_listening">Notification listener active</string>
+    <string name="tap_to_open">Tap to open</string>
+    <string name="service_running">Service running</string>
+
+    <!-- Voice Commands -->
+    <string name="voice_command_unknown">Command not recognized</string>
+    <string name="voice_processing_error">Error processing request</string>
+    <string name="voice_no_match">No speech recognized. Please try again.</string>
+</resources>

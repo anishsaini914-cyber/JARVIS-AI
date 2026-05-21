@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.Jarvis" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/text_dark</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/background_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/text_primary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.Jarvis.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_jarvis_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Jarvis</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+    </style>
+
+    <!-- Translucent Theme for Voice -->
+    <style name="Theme.Jarvis.Translucent" parent="Theme.Jarvis">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/background_overlay</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Jarvis.Fade</item>
+    </style>
+
+    <!-- Overlay Theme -->
+    <style name="Theme.Jarvis.Overlay" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Jarvis.SlideUp</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Animations -->
+    <style name="Animation.Jarvis.Fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="Animation.Jarvis.SlideUp" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_up</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!-- Glassmorphism Card Style -->
+    <style name="Widget.Jarvis.Card.Glass" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/glass_background</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="strokeColor">@color/glass_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- Neon Button Style -->
+    <style name="Widget.Jarvis.Button.Neon" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Neon Outlined Button -->
+    <style name="Widget.Jarvis.Button.NeonOutlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/accent</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Chat Bubble Styles -->
+    <style name="Widget.Jarvis.Chat.UserBubble" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/chat_user_bubble</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="contentPadding">12dp</item>
+    </style>
+
+    <style name="Widget.Jarvis.Chat.AiBubble" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/chat_ai_bubble</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="strokeWidth">0.5dp</item>
+        <item name="contentPadding">12dp</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="Widget.Jarvis.EditText" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/accent</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+    </style>
+
+    <!-- Switch Style -->
+    <style name="Widget.Jarvis.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbTint">@color/accent</item>
+        <item name="trackTint">@color/background_surface</item>
+    </style>
+
+    <!-- TextAppearance (removed font references to avoid crash) -->
+    <style name="TextAppearance.Jarvis.Headline" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontWeight">700</item>
+    </style>
+
+    <style name="TextAppearance.Jarvis.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontWeight">600</item>
+    </style>
+
+    <style name="TextAppearance.Jarvis.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.Jarvis.Accent" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/text_accent</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+</resources>

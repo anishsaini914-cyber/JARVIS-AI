@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ai_providers">
+        <item>OpenAI</item>
+        <item>Gemini</item>
+        <item>AgentRouter</item>
+        <item>Local Model</item>
+    </string-array>
+
+    <string-array name="ai_provider_values">
+        <item>openai</item>
+        <item>gemini</item>
+        <item>agentrouter</item>
+        <item>local</item>
+    </string-array>
+
+    <string-array name="temperature_units">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string-array name="temperature_unit_values">
+        <item>celsius</item>
+        <item>fahrenheit</item>
+    </string-array>
+
+    <string-array name="wake_word_options">
+        <item>Hey JARVIS</item>
+        <item>Hello JARVIS</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="wake_word_values">
+        <item>hey_jarvis</item>
+        <item>hello_jarvis</item>
+        <item>custom</item>
+    </string-array>
+
+    <string-array name="voice_options">
+        <item>Default</item>
+        <item>Assistant 1</item>
+        <item>Assistant 2</item>
+    </string-array>
+
+    <string-array name="voice_values">
+        <item>default</item>
+        <item>assistant1</item>
+        <item>assistant2</item>
+    </string-array>
+
+    <string-array name="model_sizes">
+        <item>Small (Fast)</item>
+        <item>Medium (Balanced)</item>
+        <item>Large (Accurate)</item>
+    </string-array>
+
+    <string-array name="model_size_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+</resources>

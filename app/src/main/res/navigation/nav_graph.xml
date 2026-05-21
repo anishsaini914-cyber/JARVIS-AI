@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.jarvis.assistant.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.jarvis.assistant.ui.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.jarvis.assistant.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+
+        <action
+            android:id="@+id/action_settings_to_ai_providers"
+            app:destination="@id/navigation_ai_providers" />
+
+        <action
+            android:id="@+id/action_settings_to_wake_word"
+            app:destination="@id/navigation_wake_word" />
+
+        <action
+            android:id="@+id/action_settings_to_voice_settings"
+            app:destination="@id/navigation_voice_settings" />
+
+        <action
+            android:id="@+id/action_settings_to_overlay_settings"
+            app:destination="@id/navigation_overlay_settings" />
+
+        <action
+            android:id="@+id/action_settings_to_about"
+            app:destination="@id/navigation_about" />
+
+        <action
+            android:id="@+id/action_settings_to_permissions"
+            app:destination="@id/navigation_permissions" />
+
+        <action
+            android:id="@+id/action_settings_to_model_manager"
+            app:destination="@id/navigation_model_manager" />
+
+        <action
+            android:id="@+id/action_settings_to_weather_settings"
+            app:destination="@id/navigation_weather_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_ai_providers"
+        android:name="com.jarvis.assistant.ui.settings.AiProvidersFragment"
+        android:label="AI Providers"
+        tools:layout="@layout/fragment_ai_providers" />
+
+    <fragment
+        android:id="@+id/navigation_wake_word"
+        android:name="com.jarvis.assistant.ui.settings.WakeWordSettingsFragment"
+        android:label="Wake Word"
+        tools:layout="@layout/fragment_wake_word_settings" />
+
+    <fragment
+        android:id="@+id/navigation_voice_settings"
+        android:name="com.jarvis.assistant.ui.settings.VoiceSettingsFragment"
+        android:label="Voice Settings"
+        tools:layout="@layout/fragment_voice_settings" />
+
+    <fragment
+        android:id="@+id/navigation_overlay_settings"
+        android:name="com.jarvis.assistant.ui.settings.OverlaySettingsFragment"
+        android:label="Overlay Settings"
+        tools:layout="@layout/fragment_overlay_settings" />
+
+    <fragment
+        android:id="@+id/navigation_weather_settings"
+        android:name="com.jarvis.assistant.ui.settings.WeatherSettingsFragment"
+        android:label="Weather Settings"
+        tools:layout="@layout/fragment_weather_settings" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.jarvis.assistant.ui.settings.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/navigation_permissions"
+        android:name="com.jarvis.assistant.ui.settings.PermissionsFragment"
+        android:label="Permissions"
+        tools:layout="@layout/fragment_permissions" />
+
+    <fragment
+        android:id="@+id/navigation_model_manager"
+        android:name="com.jarvis.assistant.ui.settings.ModelManagerFragment"
+        android:label="Local Models"
+        tools:layout="@layout/fragment_model_manager" />
+
+</navigation>
