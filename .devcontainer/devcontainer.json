@@ -1,56 +1,29 @@
 {
-    "name": "JARVIS Android Development",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": "."
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "vscjava.vscode-java-pack",
-                "vscjava.vscode-gradle",
-                "mathiasfrohlich.Kotlin",
-                "fwcd.kotlin",
-                "AndroidMechanic.android-dev-ext",
-                "dunnkers.android-studio-for-vscode",
-                "redhat.vscode-xml"
-            ],
-            "settings": {
-                "java.jdt.ls.java.home": "/usr/lib/jvm/temurin-17-jdk-amd64",
-                "java.configuration.runtimes": [
-                    {
-                        "name": "JavaSE-17",
-                        "path": "/usr/lib/jvm/temurin-17-jdk-amd64",
-                        "default": true
-                    }
-                ],
-                "java.compile.nullAnalysis.mode": "automatic",
-                "files.autoSave": "onFocusChange",
-                "editor.formatOnSave": true,
-                "gradle.java.home": "/usr/lib/jvm/temurin-17-jdk-amd64"
-            }
-        }
-    },
-    "postCreateCommand": "bash .devcontainer/setup.sh",
-    "remoteUser": "codespace",
-    "containerEnv": {
-        "ANDROID_HOME": "/usr/local/android-sdk",
-        "ANDROID_SDK_ROOT": "/usr/local/android-sdk",
-        "JAVA_HOME": "/usr/lib/jvm/temurin-17-jdk-amd64",
-        "GRADLE_OPTS": "-Dorg.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8"
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/java:1": {
-            "version": "17",
-            "installMaven": false,
-            "installGradle": true,
-            "gradleVersion": "8.7"
-        }
-    },
-    "onCreateCommand": "chmod +x gradlew && mkdir -p gradle/wrapper",
-    "waitFor": "postCreateCommand",
-    "remoteEnv": {
-        "JAVA_HOME": "/usr/lib/jvm/temurin-17-jdk-amd64",
-        "ANDROID_HOME": "/usr/local/android-sdk"
+  "name": "JARVIS Android Development",
+
+  "image": "mcr.microsoft.com/devcontainers/base:alpine",
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
     }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "fwcd.kotlin",
+        "redhat.vscode-xml"
+      ]
+    }
+  },
+
+  "remoteUser": "vscode",
+
+  "containerEnv": {
+    "JAVA_HOME": "/usr/lib/jvm/default-jvm"
+  },
+
+  "postCreateCommand": "java -version && chmod +x gradlew"
 }
